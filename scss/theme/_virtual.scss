@@ -1,0 +1,54 @@
+.virtual{
+    padding: $gap-s 0;
+    color: $dark;
+    &__title{
+        margin: $gap-xs 0;
+        font-size: $h-xs;
+    }
+    &__subtitle{
+        text-transform: uppercase;
+        font-size: $h-xs/2;
+    }
+    &__btn{
+        margin-top: $gap-xs;
+        display: inline-block;
+    }
+    &__img{
+        display: none;
+    }
+}
+
+
+// BREAKPOINTS
+.virtual{
+    @media screen and (min-width:37.5em){
+        padding: $gap-n 0;
+        &__btn{
+            width: 25%;
+        }
+    }
+    @media screen and (min-width:48em){
+       &__img{
+           display: block;
+           height: 100%;
+       }
+       &__article{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-column-gap: $gap-s;
+       }
+       &__content{
+           display: flex;
+           flex-wrap: wrap;
+           align-content: center;
+       }
+    }
+    @media screen and (min-width:64em){
+        padding: $gap-l 0;
+        &__article{
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: $gap-n;
+        }
+        
+    }
+}

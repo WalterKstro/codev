@@ -1,0 +1,79 @@
+.features{
+    &__article{
+        text-align: center;
+        color: $dark;
+        padding: $gap-n 0;
+    }
+    &__title{
+        padding: $gap-xs 0;
+    }
+    &__img{
+        width: 20%;
+    }
+    &__items{
+        padding: $gap-xs 0;
+    }
+    &__subtitle{
+        margin: $gap-xs 0;
+    }
+    &__subdescription{
+        color: $light-dark;
+        font-size: $t-s;
+    }
+}
+
+// BREAKPOINT
+.features{
+    @media screen and (min-width: 30em){
+        &__subdescription{
+            font-size: $t-n;
+        }
+    }
+    &__article{
+        @media screen and (min-width: 37.5em){
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px repeat(3,1fr);
+            grid-gap: 1rem;
+        }
+        @media screen and (min-width: 48em){
+            grid-gap: 2rem;
+        }
+        @media screen and (min-width: 64em){
+            grid-template-rows: 100px repeat(2,1fr);
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 5rem;
+        }
+    }
+    @media screen and (min-width: 37.5em){
+        &__title{
+            grid-column: 1 / span 2;
+        }
+    }
+    @media screen and (min-width: 48em){
+        &__title{
+            font-size: $h-s;
+        }  
+        &__img{
+            width: 15%;
+        } 
+    }
+    @media screen and (min-width: 64em){
+        &__img{
+            width: 12%;
+        } 
+        &__title{
+            grid-column: 1 / span 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            padding: 0 $gap-l;
+        }
+    }
+    @media screen and (min-width: 75em){
+        &__title{
+            padding: 0 $gap-l*3;
+        }
+    }
+}

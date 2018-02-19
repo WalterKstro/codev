@@ -1,0 +1,38 @@
+.footer{
+    &__wrapp{
+        background-color: $dark;
+        padding: $gap-xs 0;
+    }
+    text-align: center;
+    font-size: $t-s;
+    color: $light;
+    a{
+        color: $primary;
+    }
+    &__inp{
+        border:0;
+        line-height: 2rem;
+        padding-left: 1rem;
+    }
+    &__btn{
+        border:0;
+        line-height: 2rem;
+        padding: 0 1rem;
+        background-color: $primary;
+        color: $light;
+        cursor: pointer;
+        border-top-right-radius: 5px; 
+        border-bottom-right-radius: 5px; 
+    }
+}
+
+
+// BREAKPOINTS
+.footer{
+    @media screen and (min-width:37.5em){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}

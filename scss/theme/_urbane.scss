@@ -1,0 +1,79 @@
+.urbane{
+    padding: $gap-n 0;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    &__title{
+        span{
+            color: $primary;
+        }
+        font-size: $h-s;
+        line-height:$gap-n;
+    }
+    &__description{
+        color: $dark;
+        margin: $gap-n 0;
+    }
+    &__btn{
+        display: block;
+        width: 48%;
+        border-radius: 0;
+        color: $light;
+        text-align: center;
+        padding: .5rem 1rem;
+        &:last-child{
+            margin-top: $gap-xs;
+        }
+    }
+}
+
+
+// BREAKPOIN SECCION URBAN
+.urbane{
+    @media screen and (min-width:37.5em){
+        &__btn{
+            display: inline-block;
+            width: 30%;
+            padding: .7rem 1rem;
+            margin-right: $gap-xs;
+        }
+        &__description{
+            width: 60%;
+            font-size: $t-l;
+            margin: $gap-s 0;
+        }
+    }
+    @media screen and (min-width:48em){
+        &__title{
+            font-size: $h-n;
+            line-height: 3.5rem;
+        }
+        &__description{
+            width: 50%;
+        }
+        &__btn{
+            width: 25%;
+        }
+    }
+    @media screen and (min-width:64em){
+        padding: $gap-l 0;
+        &__title{
+            width: 40%;
+            line-height: 4rem;
+        }
+        &__description{
+            width: 40%;
+        }
+        &__btn{
+            width: 16%;
+        }
+    }
+    @media screen and (min-width:75em){
+        &__title{
+            width: 30%;
+        }
+        &__description{
+            width: 40%;
+        }
+    }
+}

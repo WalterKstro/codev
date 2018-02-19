@@ -1,0 +1,70 @@
+.header{
+    padding: 0 $gap-xs;
+    background-color:$light;
+    text-align: center;
+    position: sticky;
+    box-shadow: 0 .4px 1.2px  $light-dark; 
+    top:0;
+    &__brand{
+        color: $primary;
+        font-size: $h-s;
+        font-weight: 600;
+    }
+    &__link{
+        color:$light-dark;
+        display: block;
+        line-height: 3rem;
+        font-weight: 600;
+        &:last-child{
+            line-height: 0px;
+            color: $light;
+        }
+    }
+    &__nav{
+        padding: 0 $gap-xs $gap-xs;
+        position: absolute;
+        left: -150%;
+        width: 100%;
+        background-color: $light;
+    }
+    // MENU TOOGLE
+    &__toggle{
+        font-size: $h-xs;
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+    }
+    &__btn span{
+        color: $primary;
+    }
+
+}
+
+
+// BREAKPOINT HEADER
+
+.header{
+    @media screen and (min-width:48em){
+        display: flex;
+        padding: $gap-xs 0;
+        justify-content: space-around;
+        align-items: center;
+        &__nav{
+            left: 0;
+            position: relative;
+            display: flex;
+            flex-basis: 60%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+        }
+        &__toggle{display: none;}
+    }
+
+    @media screen and (min-width:64em){
+        &__nav{
+            flex-basis: 60%;
+            justify-content: space-around;
+        }
+    }
+}

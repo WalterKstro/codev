@@ -1,0 +1,12 @@
+.plan-card{
+    background-color: $light;
+    border-radius: 10px;
+    height: $gap-l*6;
+    box-shadow: 1px 1px 1px $lightdark;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+

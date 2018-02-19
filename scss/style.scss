@@ -1,0 +1,39 @@
+// PALETA DE COLORES
+$primary: hsl(127, 58%, 53%);
+$light: hsl(0, 0%, 100%);
+$lightdark:hsl(0, 0%, 96%);
+$light-dark: hsl(0, 0%, 70%);
+$dark: hsl(228, 65%, 10%); 
+
+// TAMAÑO DE FUENTES
+
+// ENCABEZADOS
+$h-l: 3.75rem;
+$h-n: 3.12rem;
+$h-s: 2.5rem;
+$h-xs: 1.87rem;
+// TEXTO
+$t-l:1.12rem;
+$t-n:0.93rem;
+$t-s:0.75rem;
+$t-xs: 0.62rem;
+
+// ESPACIADOS
+$gap-l:3.7rem;
+$gap-n:2.81rem;
+$gap-s: 1.87rem;
+$gap-xs: 1.25rem;
+
+
+// IMPORTS
+@import "base/base";
+@import "module/button";
+@import "theme/header";
+@import "state/hover";
+@import "layout/layout";
+@import "theme/urbane";
+@import "theme/features";
+@import "theme/virtual";
+@import "theme/plan";
+@import "module/card";
+@import "theme/footer";
